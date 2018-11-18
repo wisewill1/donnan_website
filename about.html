@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<title>Donnan Forge & Timber</title>
+<style>
+#top img {
+
+            background-size: cover;
+            background-position: center;
+            /* background-attachment: fixed;
+      min-height: 140px;
+     
+     width:450px;*/
+        }
+
+        #showcase {
+            /*width: 100%; float: left; margin-right: -100%; position; transition: opacity 0.6s ease 0s; z-index: 1;
+	align-items:center ;*/
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            background-color: white;
+            align-items: center;
+        }
+
+        .navbar {
+            background-color: black;
+            margin-bottom: 10px;
+
+        }
+        .sticky{
+          background-color: black;
+            margin-bottom: 10px;
+
+        }
+
+        nav li {
+            float: right;
+        }
+
+        #showcase {
+            width: 100%;
+
+        }
+
+        .social-media li {
+            padding: 5px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+
+        }
+
+        /* .card button:hover {
+            opacity: 0.7;
+        } */
+
+        .card img:hover{
+	    opacity: 1;
+	    transform:scale(1.7);
+        transition: transform 0.5s;
+        z-index: 2;
+        }
+
+        h1 {
+            text-align: center;
+            color:white;
+
+        }
+
+        section {
+            margin: 20px;
+            margin-top: 25px;
+            width:100%;
+
+        }
+
+
+        /*testimonials*/
+
+        cite img {
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: block;
+            /* vertical-align: middle; */
+
+        }
+
+        .showcase img {
+            height: 170vh;
+
+        }
+
+        .about-us h1 {
+            color: white;
+            margin-bottom: 5px;
+            margin-top:90px;
+        }
+
+        .source h1 {
+            color: white;
+            margin-bottom: 15px;
+            margin-top:90px;
+            text-decoration: underline;
+        }
+
+        body {
+          height:100vh;
+
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1470342495351-a5f90c5011cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4810751019fb632656ffe28acd813135&auto=format&fit=crop&w=750&q=80);
+            background-size: cover;
+            background-position: center;
+            height: auto;
+
+            background-attachment: fixed;
+
+        }
+
+        blockquote {
+            color: white;
+            padding: 3%;
+            font-style: italic;
+            line-height: 145%;
+            /*display: block;*/
+            position: relative;
+            margin-top: 40px;
+        }
+
+        cite {
+            font-size: 90%;
+            margin-top: 25px;
+
+        }
+
+        blockquote cite:before {
+            color: white;
+            content: "\201c";
+            font-size: 500%;
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: -3;
+        }
+
+        #dave {
+            text-align: center;
+            align-items: center;
+        }
+        .carousel-item{
+            text-align: center;
+            align-items: center;
+        } 
+
+        #dave h2 {
+            color: white;
+        }
+
+        #dave img {
+            border-radius: 20%;
+        }
+
+        .products-main img:hover {
+            opacity: 1;
+            transform: scale(1.7);
+            transition: transform 0.5s;
+        }
+
+       /* #showcase h2 {
+            margin-top: 50px;
+        }
+*/
+        
+        
+  .navbar li{
+    display: inline-block;
+  margin-right: 20px;
+
+  }
+  .navbar{
+    background: white;
+    font-weight: bold;
+    font-style: uppercase;
+    font-size: 1.2em;
+    color: black;  
+    margin-bottom: 20px; 
+    border: black; 
+  }
+
+        /*Imported from Omnifood*/
+        .social-links{
+list-style: none;
+float: right;
+
+}
+.nav-link{
+  color:white;
+}
+/*.social-links li{
+	margin-right:px;
+	z-index: 2;
+}*/
+.social-links li a:link,
+.social-links li a:visited{
+text-decoration: none;
+border:0px;	
+color:white;
+font-size:160%;
+}
+/*.footer-nav li a:active,
+.footer-nav li a:hover{
+    color: #ddd;
+	transition: background-color .3s, border .3s , color .3s;
+}*/
+
+
+.facebook{
+    color:#3b5998;;
+}
+.facebook:active,
+.facebook:hover{
+  color:#3b5998;
+  transition: background-color .3s, border .3s , color .3s;
+}
+.twitter{
+    color:#00aced;;
+}
+.twitter:active,
+.twitter:hover{
+  color:#00aced;
+  transition: background-color .3s, border .3s , color .3s;
+}
+.google{
+    color:#DB4437;
+}
+.google:active,
+.google:hover{
+  color:#DB4437;
+  transition: background-color .3s, border .3s , color .3s;
+}
+.instagram {
+    /*border-style: solid;
+*/    /*border-color: #F94877;*/
+    /*border-color:#F94877 ;*/
+    color:#F94877;
+}
+.instagram:active,
+.instagram:hover{
+  color: #F94877;
+  transition: background-color .3s, border .3s , color .3s;
+}
+
+
+#navbarNav li{
+  display: inline-block;
+  
+
+}
+/*#navbarNav li a:link,
+#navbarNav li a:visited{
+  padding:8px 0;
+  text-transform: uppercase;
+    font-size:90%; 
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+
+}*/
+
+#navbarNav li a:hover,
+#navbarNav li a:active{
+    border-bottom: 5px solid white;
+    border-right: 1px;
+    text-decoration: underline;
+    
+
+}
+#navbarNav li a{
+  color:black;
+}
+.navbar-brand
+{
+  height:80px;
+  width:auto;
+  float:left;
+ 
+}
+nav img{
+  border-radius: 25%;
+  /*opacity: 70%;*/
+  /*opacity: 0.8;*/
+  height:90px;
+
+}
+#navbarNav{
+  text-align: right;
+}
+.navbar-toggler-icon{
+  background-color:black;
+  font-size: 1.3em;
+}
+
+.carousel-item{
+  /*height:100vh;*/
+  align-items: center;
+}
+
+
+/*.dropdown ul li a{
+  float: left;
+  text-align: left;
+
+}
+.dropdown-menu{
+  background-color:black;
+  opacity: 10%;
+  float: left;
+  
+}
+.dropdown-menu li a{
+  text-align:center;
+  align-items:center;
+  color:red;
+  float: left;
+  padding-bottom: 2px;
+
+}*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    border-width: 0;
+
+    box-shadow: 20px 8px 16px 20px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.source-body p{
+color:white;
+}
+.source-body h3{
+color:white;
+}
+.source-body2 p{
+color:white;
+}
+.source-body2 h3{
+color:white;
+text-align: right;
+}
+#carousel {
+  height:70vh;
+}
+
+#mission-words{
+  color:white;
+  font-size: 1.5em;
+  float: right;
+}
+.our-mission{
+  margin-top: 15%;
+  padding-bottom: 15rem;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark navbar-expand-md fixed-top"><a href="#" class="navbar-brand"><img src="C:\Users\will\Desktop\donnan site\images\logo.jpg" height="150"></a>
+<button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+
+
+<div class="collapse navbar-collapse" id="navbarNav">
+ 	<ul class="navbar-nav">
+    
+
+          
+		<!-- <li class="nav-item">
+			<a href="#" class="nav-link">Products</a>
+      </li> -->
+
+	<li class="nav-item">
+			<a href="Donnansite.html" class="nav-link">Home</a>
+		</li>
+	<li class="nav-item">
+			<a href="#" class="nav-link">Visit Us</a>
+		</li>
+	<li class="nav-item">
+			<a href="#" class="nav-link">Contact Us</a>
+		</li>
+  <li class="nav-item">
+            <a href="#" class="nav-link">FAQ</a>
+      </li>
+	
+  <div class="dropdown">
+            <li class="nav-item nav-link"  >
+  <a><span class="dropdown">Product Line</span></a></li>
+        <div class="dropdown-content">
+    <ul>
+            <li><a href="#">Coffee End Tables</a></li>
+            <li><a href="#">Barrels</a></li>
+            <li><a href="#">Storage/Toy Boxes</a></li>
+            <li><a href="#">Flower Planters</a></li>
+            <li><a href="#">Live Edge Benches</a></li>
+            <li><a href="#">Wine/Whiskey Barrel Tables</a></li>
+            <li><a href="#">Garden Art</a></li><br>
+            <li><a href="#">Bars & Live Edge Bar Tops</a></li>
+            <li><a href="#">Live Edge Shelving</a></li>
+            <li><a href="#">Cabinets</a></li>
+            <li><a href="#">Charcuterie Boards</a></li>
+            <li><a href="#">Fire place Mantles</a></li>
+            <li><a href="#">Live Edge Slabs</a></li><br>
+            <li><a href="#">Cedar Barrels</a></li>
+            <li><a href="#">Brackets</a></li>
+            <li><a href="#">Flower Pots</a></li>
+            <li><a href="#">One of a kind Items</a></li>
+           </li>
+           </ul>
+           
+     </div>
+  </ul>
+    </div>
+</div>
+
+  <!-- SOCIAL LINKS -->
+			<!-- <div class="col-lg-6">
+ -->				<ul class="social-links">
+					<li><a href="https://www.facebook.com"><i class="fab fa-facebook-f facebook"></i></a></li>
+					 
+					 <li><a href="https://www.twitter.com"><i class="fab fa-twitter twitter"></i></a></li>
+                     
+                     <li><a href="https://www.google.com"><i class="fab fa-google google"></i></a></li>
+                     
+                     <li><a href="https://www.Instagram.com"><i class="fab fa-instagram instagram"></i></a></li>
+                </ul>
+	</ul>
+</div>
+
+
+   </nav>
+   <body>
+</section>
+   <div class="container">
+      <div class="our-mission">
+      <h1>Our Mission</h1>
+
+        <div id="mission-words">
+        <p>Dave Donnan been working with iron and wood for over 50 years. He creates custom and unique pieces from the Donnan family home in Belleville, Ontario. His attention to detail and commitment to customer happiness is what drives him.
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections</p>
+       </div>
+      </div>
+    </div>
+
+
+     <div class="container">
+     <section class="about-us">
+      <h1>About Us</h1>
+     <!-- 
+     <div id="dave"><img src="C:\Users\will\Desktop\donnan site\images\img_8848.jpg" height="300" width="300">
+      <h2>Dave <cite>Super Dave</cite> Donnan</h2> -->
+     <!-- gfghgfhfdhfghdfhdfg -->
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+      
+      <div class="carousel-inner" role="listbox"> 
+      <div class="row">
+      <div class="carousel-item active" > 
+        <div id="dave"><img src="C:\Users\will\Desktop\donnan site\images\img_8848.jpg" height="375" width="350">
+          <h2>Dave <cite>Super Dave</cite> Donnan</h2>
+        </div>
+
+<!-- <img src="C:\Users\will\Desktop\donnan site\images\img_6395.jpg" width="300"  alt="slide #1" class="d-block img-fluid"> -->
+          
+        </div>    
+         <div class="carousel-item"> 
+          <div id="dave"><img src="C:\Users\will\Desktop\donnan site\images\img_8850.jpg" heiht="375" width="350">
+          <div class="carousel-caption">
+          </div>
+          <h2>Dave <cite>Super Dave</cite> Donnan</h2>
+         </div>
+
+         </div>    
+         <div class="carousel-item"> 
+          <div id="dave"><img src="C:\Users\will\Desktop\donnan site\images\img_20771.HEIC" heiht="555" width="400">
+          <div class="carousel-caption">
+          </div>
+          <h2>Dave <cite>Super Dave</cite> Donnan</h2>
+         </div>
+            
+             
+      
+         </div>
+
+        
+      </div></div>
+
+    </div>
+  <blockquote >   
+Dave Donnan been working with iron and wood for over 50 years. He creates custom and unique pieces from the Donnan family home in Belleville, Ontario. His attention to detail and commitment to customer happiness is what drives him.
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<br>
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+     </blockquote>
+</div>
+     </div>
+
+      <div class="container" class="crew">
+      <div class="row">
+      
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <blockquote>
+          We ordered several wine barrel tables for our restaurant in Prince Edward County and they work perfectly in our rustic space!
+                    <cite><img src="C:\Users\will\Desktop\donnan site\images\dave.jpg" alt="Alberto Duncan">(Owner:Dave "Super Dave" Donnan)</cite>
+
+        </blockquote>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <blockquote>
+          We went to visit the showroom last weekend and fell in love with the Donnan family. Worth the drive to Belleville.
+                    <cite><img src="C:\Users\will\Desktop\donnan site\images\angela.jpg"alt="Joana Silva">(Sales:Angela Donnan)</cite>
+        </blockquote>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <blockquote>
+          Dave worked with me to figure out the right piece for my small space. The table fits perfectly in my dining room, thanks Dave!
+                    <cite><img src="C:\Users\will\Desktop\donnan site\images\img_8850.jpg"alt="Milton Chapman">(Master welder:Milton Chapman)</cite>
+        </blockquote>
+      </div>
+    </div>
+      
+    </div>
+    <div class="container">
+      <div class="embed-responsive embed-responsive-16by9">
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/h3FmORZVfm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+    </div>
+</div>
+     <!-- </section> -->
+
+    
+
+    <footer class="bg-light">
+
+   <div class="container py-3 py-sm-5">
+    <div class="row">
+  <div class="col-12 col-sm-6 col-md-3">
+    <h6>Quick Links</h6>
+    <ul class="list-unstyled">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Product Gallery</a></li>
+      <li><a href="#">Product Line</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Visit Us</a></li>
+    </ul>
+  </div>  
+  <div class="col-12 col-sm-6 col-md-3">
+    <h6>Information</h6>
+    <ul class="list-unstyled">
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3">
+    <h6>Follow us</h6>
+    <ul class="list-unstyled">
+      <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+    </ul>
+  </div>
+
+  
+ <div class="col-12 col-sm-6 col-md-3">
+   <h6>Our location:</h6>
+    <address>
+      <strong>###</strong><br>
+      350 5th Avenue<br>
+      Canada,canada 10118<br>
+      <i class="fas fa-phone"></i> <span class="sr-only">Telephone</span><a href="tel:+19415561787">(941)7777777</a><br>
+
+       <i class="fas fa-at"></i> <span class="sr-only">Email</span><a href="mailto:info@cameo.com">#.com</a>
+    </address>
+ </div>
+</div>
+ <div class="row">
+  <div class="col-12 col-sm-6 col-md-9 col-lg-9">
+    <ul class="list-inline">
+      <li class="list-inline-item">&copy;</li>
+      <li class="list-inline-item"> All rights reserved.</li>
+      <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modal">Terms of use and privacy policy</a></li>
+    </ul>
+
+  </div>
+    
+    </div>
+</footer>
+    </body>
+</html>
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js" integrity="sha256-MhIEydYjM8X/lfw31uxgXHB5BCo+bQX6BmFJYmzty7w=" crossorigin="anonymous"></script>
+</html>
